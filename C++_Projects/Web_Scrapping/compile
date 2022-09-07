@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm ./prgm;
+g++ ./src/*.cpp -o prgm -lcurl && clear && ./prgm;

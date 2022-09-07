@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Remove prgm
+rm ./prgm;
+
+# Compile, clear screen and run prgm
+g++ ./src/*.cpp -o prgm -lPcap++ -lPacket++ -pthread -lCommon++ -lpcap -lpthread -framework SystemConfiguration -framework CoreFoundation -lsfml-network -lsfml-system -std=c++0x -lPocoNet -lPocoFoundation && clear && ./prgm;
